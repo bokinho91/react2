@@ -29,7 +29,9 @@ export default function Posts() {
 
   // ova funkcija je napisana u cilju pokazivanja komunikacije na
   const handleClicked = (data) => {
-    console.log(data);
+    alert(
+      `You have clicked on child component with ID: ${data.id}. \n Title of this post is:\n ${data.title}`
+    );
   };
 
   return (

@@ -16,7 +16,7 @@ function SinglePost({ data, buttonClicked }) {
       <p>{body}</p>
 
       {/* button koji smo napravili u redu ispod sluzi za komunikaciju na nivou Child->Parent */}
-      <button onClick={() => buttonClicked(id)}>Click</button>
+      <button onClick={() => buttonClicked({ id, title })}>Click</button>
     </div>
   );
 }
